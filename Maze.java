@@ -77,6 +77,8 @@ public class Maze{
   private int solve(int row, int col){ //you can add more parameters since this is private
     animate();
     //COMPLETE SOLVE
+    if(maze[row][col]=='E') return 1;
+    if(maze[row][col]=='#'||maze[row][col]=='.'||maze[row][col]=='@') return -1;
 
     return -1; //so it compiles
   }
