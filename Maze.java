@@ -51,7 +51,8 @@ public class Maze{
     if(animate){
       clearTerminal();
       System.out.println(this);
-      wait(20);
+      try{wait(20);}
+      catch (Interrupted Exception e) {System.out.println("yikes");}
     }
   }
 
